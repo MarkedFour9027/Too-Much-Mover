@@ -57,6 +57,10 @@ if __name__ == "__main__":
     src_B = input("Spurce B : ")
     target_A = input("Target A : ")
     target_B = input("Target B : ")
-    
+
+    wnd_src_A = src_A.replace("\\", "//")
+    wnd_src_B = src_B.replace("\\", "//")
+    wnd_target_A = target_A.replace("\\", "//")
+    wnd_target_B = target_B.replace("\\", "//")
 
     move_files_alternately(src_A, src_B, target_A, target_B)
